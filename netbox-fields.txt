@@ -11,13 +11,13 @@ Site
 ├── Time Zone
 ├── Description
 ├── Tenant
-│ 	├── *Name
-│ 	├── *Slug
-│ 	├── Tenant Group
+│   ├── *Name
+│   ├── *Slug
+│   ├── Tenant Group
 │   │   ├── *Name
 │   │   └── *Slug
-│ 	├── Description
-│ 	├── Tags
+│ 	 ├── Description
+│  	├── Tags
 │   └── Comments
 ├── Physical address
 ├── Shipping address
