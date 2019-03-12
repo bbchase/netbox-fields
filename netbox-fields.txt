@@ -4,8 +4,8 @@ Site
 ├── *Slug
 ├── *Status
 ├── Region
-│   ├── *Name
-│   └── *Slug
+│   ├── *Name
+│   └── *Slug
 ├── Facility
 ├── ASN
 ├── Time Zone
@@ -16,8 +16,8 @@ Site
 │   ├── Tenant Group
 │   │   ├── *Name
 │   │   └── *Slug
-│ 	 ├── Description
-│  	├── Tags
+│   ├── Description
+│   ├── Tags
 │   └── Comments
 ├── Physical address
 ├── Shipping address
@@ -33,13 +33,13 @@ Site
 ## Racks
 Rack
 ├── *Site 
-│   └── (see Organization)
+│   └── (see Organization)
 ├── *Name
 ├── Facility ID
 ├── Rack Group
-│	  ├── *Site
-│	  ├── *Name
-│	  └── *Slug
+│   ├── *Site
+│   ├── *Name
+│   └── *Slug
 ├── *Status
 ├── Rack Role
 │   ├── *Name
@@ -48,7 +48,7 @@ Rack
 ├── Serial Number
 ├── Asset Tag
 ├── Tenant 
-│   └── (see Organization)
+│   └── (see Organization)
 ├── Type
 ├── *Width
 ├── *Height
@@ -62,38 +62,38 @@ Rack
 Device
 ├── Name
 ├── *Device Role
-│   ├── *Name
-│   ├── *Slug
-│   ├── *Color
-│   └── *VM Role
+│   ├── *Name
+│   ├── *Slug
+│   ├── *Color
+│   └── *VM Role
 ├── Device Type
-│   ├── *Manufacturer
-│   │   ├── *Name
-│   │   └── *Slug
-│   ├── *Model
-│   ├── *Slug
-│   ├── Part Number
-│   ├── *Height
-│   ├── Parent/child Status
-│  	├── Tags
+│   ├── *Manufacturer
+│   │   ├── *Name
+│   │   └── *Slug
+│   ├── *Model
+│   ├── *Slug
+│   ├── Part Number
+│   ├── *Height
+│   ├── Parent/child Status
+│   ├── Tags
 │   └── Comments
 ├── Serial Number
 ├── Asset Tag
 ├── *Site 
-│   └── (see Organization)
+│   └── (see Organization)
 ├── *Status
 ├── Platform
-│  	├── *Name
-│  	├── *Slug
-│   ├── Manufacturer
-│   │   ├── *Name
-│   │   └── *Slug
-│   ├── NAPALM Driver
-│   └── NAPALM Arguments
+│   ├── *Name
+│   ├── *Slug
+│   ├── Manufacturer
+│   │   ├── *Name
+│   │   └── *Slug
+│   ├── NAPALM Driver
+│   └── NAPALM Arguments
 ├── Cluster Group
 ├── Cluster
 ├── Tenant 
-│   └── (see Organization)
+│   └── (see Organization)
 ├── Tags
 └── Comments
 
@@ -108,14 +108,14 @@ IP address
 ├── Tenant (see Organization)
 ├ NAT IP (inside)
 │   ├ By Device
-│   │   ├── Site 
-│	  │	  │   └── (see Organization)
-│   │   ├── Racks (see Racks)
-│   │   ├── Device (see Devices)
-│   │   └── IP Address
+│   │   ├── Site 
+│   │   │   └── (see Organization)
+│   │   ├── Racks (see Racks)
+│   │   ├── Device (see Devices)
+│   │   └── IP Address
 │   ~OR~ 
 │   └ By IP
-│      └── IP Address
+│      └── IP Address
 └── Tags
 
 Prefix
@@ -127,7 +127,7 @@ Prefix
 │   ├── *Enforce Unique Spaces
 │   ├── Description
 │   ├── Tenant 
-│	  │   └── (see Organization)
+│   │   └── (see Organization)
 │   └── Tags
 ├── Role
 │   ├── *Name
@@ -135,33 +135,33 @@ Prefix
 ├── Description
 ├── Is a pool
 ├── Site 
-│   └── (see Organization)
+│   └── (see Organization)
 ├── VLAN
 │   ├── *ID
 │   ├── *Name
 │   ├── *Status
 │   ├── Site 
-│	  │   └── (see Organization)
+│   │   └── (see Organization)
 │   ├── VLAN Group
-│  	│   ├── Site
-│  	│   ├── *Name
-│	  │   └── *Slug
+│   │   ├── Site
+│   │   ├── *Name
+│   │   └── *Slug
 │   ├── Role
 │   ├── Description
 │   ├── Tenant 
-│	  │   └── (see Organization)
+│   │   └── (see Organization)
 │   └── Tags
 ├── Tenant 
-│   └── (see Organization)
+│   └── (see Organization)
 └── Tags
 
 
 Aggregate 
 ├── *Prefix
 ├── *RIR
-│   ├── *Name
-│   ├── *Slug
-│   └── *Private
+│   ├── *Name
+│   ├── *Slug
+│   └── *Private
 ├── Date Added
 ├── Description
 └── Tags
@@ -171,42 +171,42 @@ Aggregate
 Virtual Machine
 ├── *Name
 ├── *Cluster
-│   ├── *Name
-│   ├── Cluster Type
-│  	│   ├── *Name
-│	  │   └── *Slug
+│   ├── *Name
+│   ├── Cluster Type
+│   │   ├── *Name
+│   │   └── *Slug
 │   ├── Cluster Group
-│	  │   ├── *Name
-│		│   └── *Slug
-│ 	├── Site 
-│	  │   └── (see Organization)
-│	  ├── Tags
-│	  └── Comments
+│   │   ├── *Name
+│   │   └── *Slug
+│   ├── Site 
+│   │   └── (see Organization)
+│   ├── Tags
+│   └── Comments
 └── *Status
 
 
 ## Circuits
 Circuit
 ├── *Provider
-│   ├── *Name
-│   ├── *Slug
-│   ├── ASN
-│   ├── Account Number
-│   ├── Portal
-│   ├── NOC Contact
-│   ├── Admin Contact
-│   ├── Tags
+│   ├── *Name
+│   ├── *Slug
+│   ├── ASN
+│   ├── Account Number
+│   ├── Portal
+│   ├── NOC Contact
+│   ├── Admin Contact
+│   ├── Tags
 │   └── Comments
 ├── *Circuit ID
 ├── *Type
-│   ├── *Name
-│   └── *Slug
+│   ├── *Name
+│   └── *Slug
 ├── *Status
 ├── Date Installed
 ├── Commit Rate (kbps)
 ├── Description
 ├── Tentant 
-│   └── (see Organization)
+│   └── (see Organization)
 ├── Tags
 └── Comments
 
@@ -214,5 +214,7 @@ Circuit
 ## Secrets
 Secret
 └── Secret Role
-    ├── *Name
-    └── *Slug
+    ├── *Name
+    └── *Slug
+   
+   
